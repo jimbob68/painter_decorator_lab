@@ -28,6 +28,14 @@ Decorator.prototype.canPaintRoom = function(){
   return true
 }
 
+Decorator.prototype.reducingPaint = function(){
+  let total = 10;
+  for (const volume of this.stock){
+    total -=  paint.volume;
+  }
+  return total
+}
+
 
 
 

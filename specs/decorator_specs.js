@@ -5,24 +5,25 @@ const Room = require('../room.js');
 
 describe('decorator', function(){
 
-let decorator;
-let paint;
+  let decorator;
+  let paint;
 
 beforeEach(function(){
   decorator = new Decorator()
   paint = new Paint(2)
+
 });
 
-it('starts with an empty paint stock', function(){
+it('starts with an empty paint stock',   function(){
   const actual = decorator.stock;
   assert.deepStrictEqual(actual, [])
 });
 
 it('can add can of paint', function(){
-decorator.stock.push(paint)
-const actual = decorator.stock.length;
-assert.strictEqual(actual, 1)
-})
+  decorator.stock.push(paint);
+  const actual = decorator.stock.length;
+  assert.strictEqual(actual, 1)
+});
 it('can calculate total litres in stock', function(){
   decorator.stock.push(paint)
   const actual = decorator.totalLitres()
@@ -39,9 +40,9 @@ it('can paint room if enough paint', function(){
   assert.strictEqual(actual, true)
 });
 
+it('can decrease the amount of paint in stock', function(){
+  const actual = decorator.reducingPaint();
+  assert.strictEqual(actual, 10)
+});
 
-
-
-
-
-})
+});
