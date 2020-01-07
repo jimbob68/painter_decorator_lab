@@ -11,6 +11,22 @@ Decorator.prototype.totalLitres = function(){
   }
   return total;
 }
+Decorator.prototype.enoughForRoom = function(){
+  let total = 10;
+
+  for(const volume of this.stock){
+    total === paint.volume;
+  }
+  return true
+}
+
+Decorator.prototype.canPaintRoom = function(){
+  let total = 10;
+  for(const volume of this.stock){
+    total === paint.volume;
+  }
+  return true
+}
 
 
 
