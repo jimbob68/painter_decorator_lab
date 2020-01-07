@@ -2,7 +2,7 @@
   "name": "painter_decorator_lab",
   "version": "1.0.0",
   "description": "",
-  "main": "paint.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha specs"
   },
